@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1> Weather App</h1>
+    <p class="subtitle">Search any city and view current weather conditions</p>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name e.g. Kigali" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <button id="geoBtn" class="geo-btn"> Use My Location</button>
+
+    <div id="loading" class="loading hidden">Loading...</div>
+    <div id="error" class="error hidden"></div>
+
+    <div id="weatherCard" class="weather-card hidden">
+      <h2 id="cityName"></h2>
+
+      <div class="main-weather">
+        <img id="weatherIcon" alt="Weather Icon" />
+        <div>
+          <p class="temp" id="temperature"></p>
+          <p id="condition"></p>
+        </div>
+      </div>
+
+      <div class="details">
+        <p>💧 Humidity: <span id="humidity"></span>%</p>
+        <p>💨 Wind Speed: <span id="wind"></span> km/h</p>
+        <p>🌡️ Feels Like: <span id="feelsLike"></span>°C</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Weather App - Level 3 SWD Project</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
